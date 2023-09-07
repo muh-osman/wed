@@ -20,22 +20,22 @@ article {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: 16px;
 
   border: 1px solid #4C3021;
   padding: 16px;
-  border-radius: 16px;
+  border-radius: 18px;
   width: 500px;
 }
 
 .image img {
   width: 100%;
-  border-radius: 9px;
+  border-radius: 16px;
   transition: .3s;
 }
 
 .map {
-  border-radius: 9px;
+  border-radius: 16px;
   overflow: hidden;
 }
 
@@ -85,7 +85,8 @@ article {
  hr {
     width: 90%;
     height: 1px;
-    background-color: #000;
+    background-color: #4C3021;
+
  }
 
  .hr-box {
@@ -100,4 +101,9 @@ article {
 
  a {
     font-family: 'Tajawal', sans-serif;
+ }
+
+ .icon {
+    width: 100%;
+    text-align: center;
  }
