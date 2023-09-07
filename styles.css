@@ -6,8 +6,9 @@
 
 body {
   padding: 16px;
-  /* background-color: bisque; */
-  background: url(./image/12.png);
+  background-color: #DDDEDC;
+  background-color: #E3E3E1;
+  /* background: url(./image/12.png); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +22,7 @@ article {
   justify-content: center;
   gap: 32px;
 
-  border: 1px solid #890304;
+  border: 1px solid #4C3021;
   padding: 16px;
   border-radius: 16px;
   width: 500px;
@@ -95,4 +96,8 @@ article {
 
  img:hover {
     scale: 1.03;
+ }
+
+ a {
+    font-family: 'Tajawal', sans-serif;
  }
