@@ -32,7 +32,7 @@ img {
 }
 
 img:hover {
-  scale: 1.02;
+  /* scale: 1.02; */
 }
 
 /* Horizon Line */
@@ -61,4 +61,83 @@ hr {
 .link a:hover {
   color: blue;
   text-decoration: underline;
+}
+
+/* Audio button */
+
+section {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+#playPauseButton {
+  padding: 20px 20px;
+  width: 16px;
+  height: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4c3022;
+  position: relative;
+  z-index: 999;
+}
+
+#playPauseIcon {
+  font-size: 16px;
+  color: #e3e3e1;
+}
+
+/*  */
+.bg,
+.button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+
+.bg {
+  animation: pulse 1.2s ease infinite;
+  background: #4c3022;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 99;
+  border: none;
+  background: #4c3022;
+  background-size: 18px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button a {
+  position: absolute;
+  color: #FFF;
+  font-size: 17px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
 }
